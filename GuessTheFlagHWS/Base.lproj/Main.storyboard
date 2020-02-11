@@ -15,17 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wh-6m-Gt6">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wh-6m-Gt6">
+                                <rect key="frame" x="107" y="318" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFh-Z8-i0Z"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-fr-2sg">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYd-fr-2sg">
+                                <rect key="frame" x="107" y="448" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfv-iu-ssr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh5-J1-Oai">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
+                                <rect key="frame" x="107" y="188" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZa-i7-Hho"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -34,7 +43,7 @@
                             <constraint firstItem="1wh-6m-Gt6" firstAttribute="centerX" secondItem="fh5-J1-Oai" secondAttribute="centerX" id="bRh-Bz-ulI"/>
                             <constraint firstItem="kYd-fr-2sg" firstAttribute="top" secondItem="1wh-6m-Gt6" secondAttribute="bottom" constant="30" id="bZT-5I-fTi"/>
                             <constraint firstItem="kYd-fr-2sg" firstAttribute="centerX" secondItem="1wh-6m-Gt6" secondAttribute="centerX" id="hJa-7G-jbR"/>
-                            <constraint firstItem="fh5-J1-Oai" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="hxU-B4-D1x"/>
+                            <constraint firstItem="fh5-J1-Oai" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="hxU-B4-D1x"/>
                             <constraint firstItem="1wh-6m-Gt6" firstAttribute="top" secondItem="fh5-J1-Oai" secondAttribute="bottom" constant="30" id="ola-10-iCa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
